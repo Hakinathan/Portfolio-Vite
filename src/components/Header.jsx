@@ -18,11 +18,10 @@ function Header() {
       <h1 className="header__title">Nathan Lemoine</h1>
       <p className="header__job">Développeur Web</p>
       <p className="header__description">
-        Je suis un développeur web junior. Je réalise les projets webs de
-        petites entreprises afin de les aider à se faire connaître sur internet
-        et d&apos;avoir une plateforme web digne de ce nom. Je suis plus dans le
-        développement front-end en ce moment, mais je peux aussi réaliser des
-        projets back-end.
+        Je suis un développeur web. Je réalise des sites web et des applications
+        web aux standards actuels. Je mets en place des stratégies
+        d&apos;optimisatin de mes applications web également afin d&apos;offrir
+        la meilleure expérience utilisateur possible.
       </p>
       <div className="header__buttons flex flex--center">
         <Button

@@ -128,7 +128,7 @@
 .header__description {
   font-size: 1.6rem;
   font-weight: 400;
-  color: var(--color-text-subtitle);
+  color: var(--color-text-middle);
   line-height: 1.8;
 }
 
