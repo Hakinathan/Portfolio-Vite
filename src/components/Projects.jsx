@@ -1,5 +1,5 @@
 import ProjectCard from "./ProjectCard";
-import Codamate from "../assets/img/codamate.png";
+import Codamate from "../assets/img/codamate.webp";
 
 const projects = [
   {
@@ -14,7 +14,7 @@ const projects = [
 
 function Projects() {
   return (
-    <section className="projects-section">
+    <section className="projects-section" id="creations">
       <div className="projects-section__content grid grid--col-3">
         {projects.map((project) => (
           <ProjectCard

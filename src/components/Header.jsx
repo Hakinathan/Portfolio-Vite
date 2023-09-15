@@ -1,14 +1,15 @@
 import profil from "../assets/img/me.webp";
 import Button from "./Button";
 import ButtonCta from "./ButtonCta";
-// import planet from "../assets/img/planet.svg";
-// import rocket from "../assets/img/rocket.svg";
-import test from "../assets/img/test.svg";
+import planet from "../assets/img/planet.svg";
+import rocket from "../assets/img/rocket.svg";
+// import test from "../assets/img/test.svg";
 
 function Header() {
   return (
     <header className="header flex flex--column">
-      <img src={test} alt="Planet" className="header__planet" />
+      <img src={planet} alt="Planet" className="header__planet" />
+      <img src={rocket} alt="Rocket" className="header__rocket" />
       <img
         src={profil}
         alt="Profil picture of me, Nathan Lemoine"

@@ -9,6 +9,7 @@
 :root {
   --color-text-title: #364fc7;
   --color-text-subtitle: #91a7ff;
+  --color-text-middle: #7284d8;
   --color-text-light: #f1f4ff;
   --color-text-white: #ffffff;
 }
@@ -22,6 +23,7 @@ body {
   font-family: sans-serif;
   font-weight: 400;
   line-height: 1;
+  position: relative;
 }
 
 a {
@@ -79,4 +81,8 @@ ul {
 
 .text-center {
   text-align: center;
+}
+
+.margin-top-2 {
+  margin-top: 2.4rem;
 }

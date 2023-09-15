@@ -9,7 +9,7 @@ function ProjectCard({ title, description, image, link, tags }) {
         alt={`Project ${title} image`}
         className="project-card__image"
       />
-      <div className="project-card__content flex">
+      <div className="project-card__content flex flex--column">
         <h3 className="project-card__title">{title}</h3>
         <p className="project-card__description">{description}</p>
         <a href={link} className="project-card__link">
