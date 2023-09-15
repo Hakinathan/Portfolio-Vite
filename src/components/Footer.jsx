@@ -45,6 +45,7 @@ function Footer() {
           </a>
         ))}
       </div>
+      <p className="footer__text-end"> Made with ♥ by me with React & Vite</p>
     </footer>
   );
 }

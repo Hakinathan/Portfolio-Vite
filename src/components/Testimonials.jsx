@@ -36,7 +36,7 @@ function Testimonials() {
   };
 
   return (
-    <section className="testimonials" id="testimonials">
+    <section className="testimonials-section" id="testimonials">
       <div className="testimonials__container">
         <div className="testimonials__content">
           <ImQuotesLeft className="testimonials__icon" />
