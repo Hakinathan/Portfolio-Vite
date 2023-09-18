@@ -11,6 +11,7 @@ function ProjectCard({ title, description, image, link, tags, github }) {
         className="project-card__image"
         width={300}
         height={250}
+        rel="preload"
       />
       <div className="project-card__content flex flex--column">
         <h3 className="project-card__title">{title}</h3>

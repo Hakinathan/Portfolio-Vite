@@ -59,6 +59,7 @@ function Testimonials() {
                 alt={feedback.name}
                 width={100}
                 height={100}
+                loading="lazy"
               />
               <h3 className="testimonials__author-name">{feedback.name}</h3>
               <p className="testimonials__author-title">{feedback.title}</p>
