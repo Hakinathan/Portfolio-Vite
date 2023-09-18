@@ -29,7 +29,7 @@ function Footer() {
           {new Date().getFullYear()}
         </p>
         <p className="footer__text">
-          Numéro de TVA : <strong>BE 0804.552.840</strong>
+          Numéro BCE : <strong>0804.552.840</strong>
         </p>
       </div>
       <div className="footer__links flex">

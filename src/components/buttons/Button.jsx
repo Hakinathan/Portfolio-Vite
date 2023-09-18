@@ -1,21 +1,22 @@
 import PropTypes from "prop-types";
 
-function ButtonCta({ text, link }) {
+function Button({ text, link, className }) {
   return (
     <a
       href={link}
       target="_blank"
       rel="noopener noreferrer"
-      className="button_cta"
+      className={className}
     >
       {text}
     </a>
   );
 }
 
-ButtonCta.propTypes = {
+Button.propTypes = {
   text: PropTypes.string.isRequired,
   link: PropTypes.string.isRequired,
+  className: PropTypes.string.isRequired,
 };
 
-export default ButtonCta;
+export default Button;

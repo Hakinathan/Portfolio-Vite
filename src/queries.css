@@ -25,12 +25,23 @@
     right: 2rem;
   }
 
-  .projects-section__content {
+  .projects-section__content,
+  .services-section__content,
+  .github-section__content {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .services-section__content {
+    padding: 0 2rem;
   }
 
   .testimonials {
     padding: 0 2rem;
+  }
+
+  .github-section__content {
+    margin: 0 auto;
+    max-width: 80rem;
   }
 }
 

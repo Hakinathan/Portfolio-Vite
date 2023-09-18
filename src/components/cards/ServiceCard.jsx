@@ -1,12 +1,9 @@
 import PropTypes from "prop-types";
 
-function ServiceCard({ title, price, features }) {
+function ServiceCard({ title, features }) {
   return (
     <div className="service-card flex flex--column">
       <h3 className="service-card__title text-center">{title}</h3>
-      <p className="service-card__price text-center">
-        {price} <span>€</span>
-      </p>
       <div className="service-card__features">
         {features.map((feature, index) => (
           <p key={index} className="service-card__feature flex flex--center">
@@ -25,7 +22,6 @@ function ServiceCard({ title, price, features }) {
 
 ServiceCard.propTypes = {
   title: PropTypes.string.isRequired,
-  price: PropTypes.number.isRequired,
   features: PropTypes.array.isRequired,
 };
 

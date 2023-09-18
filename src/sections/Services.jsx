@@ -1,4 +1,5 @@
-import ServiceCard from "./ServiceCard";
+import Button from "../components/buttons/Button";
+import ServiceCard from "../components/cards/ServiceCard";
 import { BsCheck2Circle, BsInfoCircle } from "react-icons/bs";
 
 const services = [
@@ -26,22 +27,36 @@ const services = [
         name: "Maintenance possible",
         icon: <BsInfoCircle />,
       },
+      {
+        name: "Hébergement possible",
+        icon: <BsInfoCircle />,
+      },
     ],
   },
 ];
 
 function Services() {
   return (
-    <section className="services-section">
-      <div className="services-section__content grid grid--col-2">
+    <section className="services-section" id="services">
+      <div className="services-section__content grid">
         {services.map((service) => (
           <ServiceCard
             key={service.title}
             title={service.title}
-            price={service.price}
             features={service.features}
           />
         ))}
+        <div className="services-section__cta flex flex--column">
+          <p className="services-section__cta-text">
+            Envie d&apos;en savoir plus ? Contactez-moi pour un appel dévouverte
+            !
+          </p>
+          <Button
+            text="Rendez-vous découverte 🔭"
+            link="https://cal.com/lusty9149/session-decouverte-🔭"
+            className="services-section__cta-button"
+          />
+        </div>
       </div>
     </section>
   );

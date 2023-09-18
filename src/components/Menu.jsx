@@ -12,6 +12,18 @@ const links = [
     label: "Témoignages 🙏",
     url: "#testimonials",
   },
+  {
+    label: "Services 💻",
+    url: "#services",
+  },
+  {
+    label: "Github 📈",
+    url: "#github",
+  },
+  {
+    label: "Parlons-en 📞",
+    url: "#cta",
+  },
 ];
 
 function Menu() {
@@ -29,7 +41,7 @@ function Menu() {
       </button>
       {show && (
         <nav className="header__nav">
-          <ul className="header__list flex flex--column text-center">
+          <ul className="header__list flex flex--column">
             {links.map((link, index) => (
               <li key={index} className="header__item">
                 <a href={link.url} className={`header__link`}>

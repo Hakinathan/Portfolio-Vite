@@ -46,6 +46,7 @@
   color: var(--color-text-white);
   text-decoration: none;
   transition: all 0.4s;
+  display: inline-block;
 }
 
 .header__link::after {
@@ -56,12 +57,11 @@
   height: 2px;
   transition: width 0.3s ease 0s;
   margin-top: 0.8rem;
-  margin-left: 2.4rem;
 }
 
 .header__link:hover::after,
 .header__link:active::after {
-  width: 70%;
+  width: 100%;
 }
 
 .header__btn:link,
@@ -119,12 +119,6 @@
   opacity: 0.5;
 }
 
-.header__job {
-  font-size: 1.6rem;
-  font-weight: 400;
-  color: var(--color-text-subtitle);
-}
-
 .header__description {
   font-size: 1.6rem;
   font-weight: 400;
@@ -146,32 +140,39 @@
   font-weight: 700;
 }
 
-.button:link,
-.button:visited {
+.header__button:link,
+.header__button:visited {
   color: var(--color-text-title);
   border: 1px solid var(--color-text-subtitle);
   padding: 1.2rem 2.4rem;
   border-radius: 3rem;
   transition: all 0.4s;
   cursor: pointer;
+  font-size: 2rem;
 }
 
-.button:hover,
-.button:active,
-.button_cta:hover,
-.button_cta:active {
+.header__button:hover,
+.header__button:active,
+.header__button--cta:hover,
+.header__button--cta:active {
   transform: translateY(-0.3rem);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
-.button_cta:link,
-.button_cta:visited {
+.header__button--cta:link,
+.header__button--cta:visited {
   background-color: var(--color-text-title);
   color: var(--color-text-white);
   padding: 1.2rem 2.4rem;
   border-radius: 3rem;
   transition: all 0.4s;
   cursor: pointer;
+  font-size: 2rem;
+}
+
+.header__button:active,
+.header__button--cta:active {
+  transform: translateY(-0.1rem);
 }
 
 /* Projects */
@@ -319,6 +320,7 @@
   margin: 9.6rem auto;
   column-gap: 2.4rem;
   row-gap: 4.8rem;
+  grid-template-columns: 40fr 60fr;
 }
 
 .service-card {
@@ -343,17 +345,6 @@
   line-height: 1.5;
   margin-bottom: 1.6rem;
   gap: 1.2rem;
-}
-
-.service-card__price {
-  font-size: 4.4rem;
-  font-weight: 400;
-  color: var(--color-text-subtitle);
-  margin-bottom: 1.6rem;
-}
-
-.service-card__price span {
-  font-size: 2.4rem;
 }
 
 .service-card__button-container {
@@ -382,6 +373,65 @@
 .service-card__button:active {
   transform: translateY(-0.1rem);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.services-section__cta {
+  margin: auto 0;
+  padding: 4.8rem 2.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
+  text-align: center;
+  transition: all 0.4s;
+}
+
+.services-section__cta-text {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--color-text-title);
+  margin-bottom: 1.6rem;
+}
+
+.services-section__cta-button:link,
+.services-section__cta-button:visited {
+  background-color: var(--color-text-title);
+  color: var(--color-text-white);
+  padding: 1.2rem 2.4rem;
+  border-radius: 3rem;
+  transition: all 0.4s;
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+
+.services-section__cta-button:hover,
+.services-section__cta-button:active {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+/* Github */
+
+.github-section {
+  max-width: 100rem;
+  margin: 9.6rem auto;
+}
+
+.github-section__content {
+  padding: 0 2.4rem;
+  row-gap: 2.4rem;
+  column-gap: 4.8rem;
+}
+
+.github-section__content img {
+  margin: auto;
+}
+
+/* Planning */
+
+.calcom-embed {
+  max-width: 100rem;
+  margin: 9.6rem auto;
 }
 
 /* Footer */

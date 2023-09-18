@@ -1,6 +1,6 @@
 import profil from "../assets/img/me.webp";
-import Button from "./Button";
-import ButtonCta from "./ButtonCta";
+import Button from "../components/buttons/Button";
+import ButtonCta from "../components/buttons/ButtonCta";
 import planet from "../assets/img/planet.svg";
 import rocket from "../assets/img/rocket.svg";
 // import test from "../assets/img/test.svg";
@@ -16,21 +16,22 @@ function Header() {
         className="header__picture"
       />
       <h1 className="header__title">Nathan Lemoine</h1>
-      <p className="header__job">Développeur Web</p>
       <p className="header__description">
-        Je suis un développeur web. Je réalise des sites web et des applications
-        web aux standards actuels. Je mets en place des stratégies
-        d&apos;optimisatin de mes applications web également afin d&apos;offrir
-        la meilleure expérience utilisateur possible.
+        Je suis un développeur web. Je réalise des sites web aux standards
+        actuels. Je mets en place des stratégies d&apos;optimisation de mes
+        applications web également afin d&apos;offrir la meilleure expérience
+        utilisateur possible.
       </p>
       <div className="header__buttons flex flex--center">
         <Button
           text="Me contacter"
           link="mailto:contact.lemoine.nathan@pm.me"
+          className="header__button"
         />
         <ButtonCta
-          text="Rendez-vous découverte 🔭"
+          text="Prendre rendez-vous 📅"
           link="https://cal.com/lusty9149/session-decouverte-🔭"
+          className="header__button--cta"
         />
       </div>
     </header>

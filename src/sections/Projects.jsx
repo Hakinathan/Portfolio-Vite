@@ -1,4 +1,4 @@
-import ProjectCard from "./ProjectCard";
+import ProjectCard from "../components/cards/ProjectCard";
 import Codamate from "../assets/img/codamate.webp";
 
 const projects = [
@@ -8,6 +8,7 @@ const projects = [
       "Un site vitrine pour les sessions de rattrapage en Java/Javascript que je donne",
     image: Codamate,
     link: "https://codamate.nathan-lemoine.be",
+    github: "https://github.com/Hakinathan/CodaMate",
     tags: ["HTML", "CSS", "Vite JS", "React"],
   },
 ];
@@ -24,6 +25,7 @@ function Projects() {
             image={project.image}
             link={project.link}
             tags={project.tags}
+            github={project.github}
           />
         ))}
       </div>
