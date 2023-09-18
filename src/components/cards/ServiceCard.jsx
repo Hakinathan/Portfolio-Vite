@@ -11,11 +11,11 @@ function ServiceCard({ title, features }) {
           </p>
         ))}
       </div>
-      <div className="service-card__button-container flex flex--center">
+      {/* <div className="service-card__button-container flex flex--center">
         <a href="#" className="service-card__button">
           Je commande 💪🏻
         </a>
-      </div>
+      </div> */}
     </div>
   );
 }
