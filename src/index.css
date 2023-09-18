@@ -153,25 +153,23 @@
 
 .header__button:hover,
 .header__button:active,
-.header__button--cta:hover,
-.header__button--cta:active {
+.header__button--cta:hover {
   transform: translateY(-0.3rem);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
-.header__button--cta:link,
-.header__button--cta:visited {
+.header__button--cta {
   background-color: var(--color-text-title);
   color: var(--color-text-white);
   padding: 1.2rem 2.4rem;
   border-radius: 3rem;
   transition: all 0.4s;
-  cursor: pointer;
   font-size: 2rem;
+  border: none;
+  cursor: pointer;
 }
 
-.header__button:active,
-.header__button--cta:active {
+.header__button:active {
   transform: translateY(-0.1rem);
 }
 
@@ -316,11 +314,11 @@
 /* Services */
 
 .services-section__content {
-  max-width: 100rem;
+  max-width: 50rem;
   margin: 9.6rem auto;
   column-gap: 2.4rem;
   row-gap: 4.8rem;
-  grid-template-columns: 40fr 60fr;
+  grid-template-columns: 1fr;
 }
 
 .service-card {

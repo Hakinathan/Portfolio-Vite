@@ -1,4 +1,3 @@
-import Button from "../components/buttons/Button";
 import ServiceCard from "../components/cards/ServiceCard";
 import { BsCheck2Circle, BsInfoCircle } from "react-icons/bs";
 
@@ -46,7 +45,7 @@ function Services() {
             features={service.features}
           />
         ))}
-        <div className="services-section__cta flex flex--column">
+        {/* <div className="services-section__cta flex flex--column">
           <p className="services-section__cta-text">
             Envie d&apos;en savoir plus ? Contactez-moi pour un appel dévouverte
             !
@@ -56,7 +55,7 @@ function Services() {
             link="https://cal.com/lusty9149/session-decouverte-🔭"
             className="services-section__cta-button"
           />
-        </div>
+        </div> */}
       </div>
     </section>
   );

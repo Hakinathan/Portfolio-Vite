@@ -92,4 +92,27 @@
   .testimonials__authors {
     gap: 2rem;
   }
+
+  .header__button:link,
+  .header__button:visited,
+  .header__button--cta {
+    font-size: 1.6rem;
+  }
+
+  .testimonials__container {
+    padding: 0 2rem;
+  }
+
+  .testimonials__content {
+    min-height: 33rem;
+  }
+
+  .github-section__content,
+  .calcom-embed {
+    padding: 0 2rem;
+  }
+
+  .github-section__content img {
+    width: 100%;
+  }
 }

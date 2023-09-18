@@ -1,8 +1,8 @@
 import profil from "../assets/img/me.webp";
 import Button from "../components/buttons/Button";
-import ButtonCta from "../components/buttons/ButtonCta";
 import planet from "../assets/img/planet.svg";
 import rocket from "../assets/img/rocket.svg";
+import CalButton from "../components/buttons/CalButton";
 // import test from "../assets/img/test.svg";
 
 function Header() {
@@ -28,9 +28,8 @@ function Header() {
           link="mailto:contact.lemoine.nathan@pm.me"
           className="header__button"
         />
-        <ButtonCta
-          text="Prendre rendez-vous 📅"
-          link="https://cal.com/lusty9149/session-decouverte-🔭"
+        <CalButton
+          title="Prendre rendez-vous 📅"
           className="header__button--cta"
         />
       </div>
