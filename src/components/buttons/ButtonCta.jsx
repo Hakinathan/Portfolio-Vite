@@ -2,12 +2,7 @@ import PropTypes from "prop-types";
 
 function ButtonCta({ text, link, className }) {
   return (
-    <a
-      href={link}
-      target="_blank"
-      rel="noopener noreferrer"
-      className={className}
-    >
+    <a href={link} className={className}>
       {text}
     </a>
   );

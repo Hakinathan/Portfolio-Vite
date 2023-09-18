@@ -9,15 +9,25 @@ function ProjectCard({ title, description, image, link, tags, github }) {
         src={image}
         alt={`Project ${title} image`}
         className="project-card__image"
+        width={300}
+        height={250}
       />
       <div className="project-card__content flex flex--column">
         <h3 className="project-card__title">{title}</h3>
         <p className="project-card__description">{description}</p>
         <div className="project-card__link flex flex--between">
-          <a href={link} className="project-card__link">
+          <a
+            href={link}
+            className="project-card__link"
+            aria-label="Voir le projet dans un nouvel onglet"
+          >
             <PiShareFill />
           </a>
-          <a href={github} className="project-card__link">
+          <a
+            href={github}
+            className="project-card__link"
+            aria-label="Voir le code source Github dans un nouvel onglet"
+          >
             <FiGithub />
           </a>
         </div>

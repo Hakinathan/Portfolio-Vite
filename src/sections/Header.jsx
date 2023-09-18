@@ -2,8 +2,8 @@ import profil from "../assets/img/me.webp";
 import Button from "../components/buttons/Button";
 import planet from "../assets/img/planet.svg";
 import rocket from "../assets/img/rocket.svg";
-import CalButton from "../components/buttons/CalButton";
-// import test from "../assets/img/test.svg";
+import ButtonCta from "../components/buttons/ButtonCta";
+// import CalButton from "../components/buttons/CalButton";
 
 function Header() {
   return (
@@ -28,10 +28,15 @@ function Header() {
           link="mailto:contact.lemoine.nathan@pm.me"
           className="header__button"
         />
-        <CalButton
-          title="Prendre rendez-vous 📅"
+        <ButtonCta
+          text="Prendre rendez-vous 📅"
+          link="#cta"
           className="header__button--cta"
         />
+        {/* <CalButton
+          title="Prendre rendez-vous 📅"
+          className="header__button--cta"
+        /> */}
       </div>
     </header>
   );

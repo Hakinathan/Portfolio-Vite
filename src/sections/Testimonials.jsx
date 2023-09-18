@@ -1,6 +1,6 @@
-import author1 from "../assets/img/feedback_author-1.jpg";
-import author2 from "../assets/img/feedback_author-2.jpg";
-import author3 from "../assets/img/feedback_author-3.jpg";
+import author1 from "../assets/img/feedback_author-1.webp";
+import author2 from "../assets/img/feedback_author-2.webp";
+import author3 from "../assets/img/feedback_author-3.webp";
 import { useState } from "react";
 import { ImQuotesLeft } from "react-icons/im";
 
@@ -57,6 +57,8 @@ function Testimonials() {
                 className="testimonials__author-image"
                 src={feedback.image}
                 alt={feedback.name}
+                width={100}
+                height={100}
               />
               <h3 className="testimonials__author-name">{feedback.name}</h3>
               <p className="testimonials__author-title">{feedback.title}</p>

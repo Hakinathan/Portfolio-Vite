@@ -19,6 +19,8 @@ function Planning() {
       style={{ width: "100%", height: "100%", overflow: "scroll" }}
       config={{ layout: "month_view" }}
       className="calcom-embed"
+      id="cta"
+      title="Mon planning de session découverte"
     />
   );
 }
