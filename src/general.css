@@ -12,6 +12,7 @@
   --color-text-middle: #7284d8;
   --color-text-light: #f1f4ff;
   --color-text-white: #ffffff;
+  --color-text-gray-dark: #333;
 }
 
 html {
@@ -81,6 +82,10 @@ ul {
 
 .text-center {
   text-align: center;
+}
+
+.text-dark {
+  color: var(--color-text-gray-dark);
 }
 
 .margin-top-2 {

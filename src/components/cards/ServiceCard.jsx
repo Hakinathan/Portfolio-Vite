@@ -1,14 +1,17 @@
 import PropTypes from "prop-types";
 
-function ServiceCard({ title, features }) {
+function ServiceCard({ features }) {
   return (
     <div className="service-card flex flex--column">
-      <h3 className="service-card__title text-center">{title}</h3>
-      <div className="service-card__features">
+      <div className="service-card__features grid grid--col-4">
         {features.map((feature, index) => (
-          <p key={index} className="service-card__feature flex flex--center">
-            {feature.icon} {feature.name}
-          </p>
+          <div className="service-card__feature flex flex--column" key={index}>
+            {feature.icon}
+            <p className="service-card__feature--title">{feature.name}</p>
+            <p className="service-card__feature--description">
+              {feature.description}
+            </p>
+          </div>
         ))}
       </div>
     </div>

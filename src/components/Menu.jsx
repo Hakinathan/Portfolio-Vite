@@ -17,10 +17,6 @@ const links = [
     url: "#services",
   },
   {
-    label: "Github 📈",
-    url: "#github",
-  },
-  {
     label: "Parlons-en 📞",
     url: "#cta",
   },
