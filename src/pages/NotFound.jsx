@@ -1,5 +1,5 @@
 import Footer from "../sections/Footer";
-import svg from "../assets/svg/404-error.svg";
+import svg from "../assets/svg/404.svg";
 
 function NotFound() {
   return (

@@ -27,6 +27,7 @@ const links = [
   {
     label: "CV 📝",
     url: "https://flowcv.com/resume/o7asiufarb",
+    target: true,
   },
 ];
 
@@ -48,7 +49,14 @@ function Menu() {
           <ul className="header__list flex flex--column">
             {links.map((link, index) => (
               <li key={index} className="header__item">
-                <a href={link.url} className={`header__link`}>
+                <a
+                  href={link.url}
+                  className={`header__link`}
+                  {...(link.target && {
+                    target: "_blank",
+                    rel: "noopener noreferrer",
+                  })}
+                >
                   {link.label}
                 </a>
               </li>

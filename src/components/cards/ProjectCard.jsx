@@ -24,7 +24,11 @@ function ProjectCard({ title, description, image, link, tags, github }) {
           >
             <PiShareFill />
           </a>
-          <a href={github} className="project-card__link">
+          <a
+            href={github}
+            className="project-card__link"
+            aria-label="Voir le code source sur Github"
+          >
             <FiGithub />
           </a>
         </div>

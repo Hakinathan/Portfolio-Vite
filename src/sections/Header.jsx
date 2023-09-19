@@ -32,10 +32,6 @@ function Header() {
           link="#cta"
           className="header__button--cta"
         />
-        {/* <CalButton
-          title="Prendre rendez-vous 📅"
-          className="header__button--cta"
-        /> */}
       </div>
     </header>
   );
