@@ -11,7 +11,7 @@ function Main() {
       <Projects />
       <SectionTitle title="Témoignages 🙏🏻" />
       <Testimonials />
-      <SectionTitle title="Mes services 🤝🏻" />
+      <SectionTitle title="Mon service de site web 🤝🏻" />
       <Services />
       <SectionTitle title="Parlons-en 📞" />
       <Planning />

@@ -86,10 +86,15 @@
   .testimonials__author-title {
     font-size: 1.2rem;
   }
+
+  .service-card__features {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2.4rem;
+  }
 }
 
-/* 320px (Phones) */
-@media (max-width: 20em) {
+/* 360px (Phones) */
+@media (max-width: 22.5em) {
   .button {
     font-size: 1.2rem;
   }
@@ -122,5 +127,15 @@
 
   .github-section__content img {
     width: 100%;
+  }
+
+  .service-card__features {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 4rem;
+    text-align: center;
+  }
+
+  .service-card__feature--icon {
+    margin: 0 auto;
   }
 }
