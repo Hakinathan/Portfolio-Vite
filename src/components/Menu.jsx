@@ -24,6 +24,10 @@ const links = [
     label: "Parlons-en 📞",
     url: "#cta",
   },
+  {
+    label: "CV 📝",
+    url: "https://flowcv.com/resume/o7asiufarb",
+  },
 ];
 
 function Menu() {

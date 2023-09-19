@@ -243,6 +243,7 @@
 .testimonials__container {
   max-width: 100rem;
   margin: 9.6rem auto;
+  padding: 0 2.4rem;
 }
 
 .testimonials__content {
@@ -430,6 +431,35 @@
 .calcom-embed {
   max-width: 100rem;
   margin: 9.6rem auto;
+  padding: 0 2.4rem;
+}
+
+/*  Not found */
+
+.not-found-container {
+  max-width: 100rem;
+  margin: 9.6rem auto;
+}
+
+.not-found-title {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: var(--color-text-title);
+  margin-bottom: 1.6rem;
+}
+
+.not-found-text {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--color-text-middle);
+  line-height: 1.5;
+  margin-bottom: 1.6rem;
+}
+
+.not-found-img {
+  width: 45rem;
+  height: 45rem;
+  margin-bottom: 1.6rem;
 }
 
 /* Footer */

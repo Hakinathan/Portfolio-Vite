@@ -24,11 +24,7 @@ function ProjectCard({ title, description, image, link, tags, github }) {
           >
             <PiShareFill />
           </a>
-          <a
-            href={github}
-            className="project-card__link"
-            aria-label="Voir le code source Github dans un nouvel onglet"
-          >
+          <a href={github} className="project-card__link">
             <FiGithub />
           </a>
         </div>

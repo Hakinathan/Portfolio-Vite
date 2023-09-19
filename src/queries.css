@@ -71,6 +71,14 @@
     min-height: 21rem;
   }
 
+  .testimonials__authors {
+    gap: 1.6rem;
+  }
+
+  .testimonials__author--active::after {
+    width: 85%;
+  }
+
   .testimonials__author-name {
     font-size: 1.4rem;
   }

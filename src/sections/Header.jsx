@@ -1,9 +1,8 @@
 import profil from "../assets/img/me.webp";
 import Button from "../components/buttons/Button";
-import planet from "../assets/img/planet.svg";
-import rocket from "../assets/img/rocket.svg";
+import planet from "../assets/svg/planet.svg";
+import rocket from "../assets/svg/rocket.svg";
 import ButtonCta from "../components/buttons/ButtonCta";
-// import CalButton from "../components/buttons/CalButton";
 
 function Header() {
   return (
