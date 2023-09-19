@@ -20,7 +20,6 @@ function Planning() {
       config={{ layout: "month_view" }}
       className="calcom-embed"
       id="cta"
-      title="Mon planning de session découverte"
     />
   );
 }

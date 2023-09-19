@@ -45,17 +45,6 @@ function Services() {
             features={service.features}
           />
         ))}
-        {/* <div className="services-section__cta flex flex--column">
-          <p className="services-section__cta-text">
-            Envie d&apos;en savoir plus ? Contactez-moi pour un appel dévouverte
-            !
-          </p>
-          <Button
-            text="Rendez-vous découverte 🔭"
-            link="https://cal.com/lusty9149/session-decouverte-🔭"
-            className="services-section__cta-button"
-          />
-        </div> */}
       </div>
     </section>
   );

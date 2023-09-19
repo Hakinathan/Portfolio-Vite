@@ -27,7 +27,7 @@ function ProjectCard({ title, description, image, link, tags, github }) {
           <a
             href={github}
             className="project-card__link"
-            aria-label="Voir le code source Github dans un nouvel onglet"
+            aria-label="Voir le code source sur Github"
           >
             <FiGithub />
           </a>

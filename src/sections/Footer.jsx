@@ -3,18 +3,22 @@ import { FiTwitter, FiMail, FiGithub } from "react-icons/fi";
 
 const socialLogos = [
   {
+    name: "LinkedIn",
     link: "https://www.linkedin.com/in/nathan-lemoine-dev/",
     logo: <BiLogoLinkedin />,
   },
   {
+    name: "Twitter",
     link: "https://twitter.com/NathouL22",
     logo: <FiTwitter />,
   },
   {
+    name: "Mail",
     link: "mailto:contact.nathan.lemoine@pm.me",
     logo: <FiMail />,
   },
   {
+    name: "Github",
     link: "https://github.com/Hakinathan",
     logo: <FiGithub />,
   },
@@ -40,6 +44,7 @@ function Footer() {
             rel="noopener noreferrer"
             key={index}
             className="footer__link"
+            aria-label={`Voir le profil sur ${logo.name} dans un nouvel onglet`}
           >
             {logo.logo}
           </a>
