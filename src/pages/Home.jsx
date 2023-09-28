@@ -18,7 +18,7 @@ function Home() {
     <>
       <ScrollContainer>
         <ScrollPage>
-          <Animator animation={batch(Sticky(50, 50), Fade(), MoveOut(0, -200))}>
+          <Animator animation={batch(Sticky(), Fade(), MoveOut(0, -50))}>
             <h1 className="title">Bienvenue sur mon site ! 😎</h1>
           </Animator>
         </ScrollPage>
