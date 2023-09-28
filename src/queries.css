@@ -31,6 +31,10 @@
     grid-template-columns: repeat(1, 1fr);
   }
 
+  .project-card__image {
+    width: 60%;
+  }
+
   .services-section__content {
     padding: 0 2rem;
   }
@@ -42,6 +46,10 @@
   .github-section__content {
     margin: 0 auto;
     max-width: 80rem;
+  }
+
+  .title {
+    font-size: 4rem;
   }
 }
 
@@ -67,6 +75,10 @@
     font-size: 1.4rem;
   }
 
+  .project-card__image {
+    width: 80%;
+  }
+
   .testimonials__content {
     min-height: 21rem;
   }
@@ -90,6 +102,14 @@
   .service-card__features {
     grid-template-columns: repeat(2, 1fr);
     row-gap: 2.4rem;
+  }
+
+  .cal-button {
+    font-size: 1.4rem;
+  }
+
+  .title {
+    font-size: 3.2rem;
   }
 }
 
@@ -120,6 +140,10 @@
     min-height: 33rem;
   }
 
+  .project-card__image {
+    width: 100%;
+  }
+
   .github-section__content,
   .calcom-embed {
     padding: 0 2rem;
@@ -137,5 +161,13 @@
 
   .service-card__feature--icon {
     margin: 0 auto;
+  }
+
+  .cal-button {
+    font-size: 1.2rem;
+  }
+
+  .title {
+    font-size: 2.4rem;
   }
 }

@@ -9,14 +9,14 @@ function ProjectCard({ title, description, image, link, tags, github }) {
         src={image}
         alt={`Project ${title} image`}
         className="project-card__image"
+        type="image/webp"
         width={300}
-        height={250}
-        rel="preload"
+        height={225}
       />
       <div className="project-card__content flex flex--column">
         <h3 className="project-card__title">{title}</h3>
         <p className="project-card__description">{description}</p>
-        <div className="project-card__link flex flex--between">
+        <div className="flex flex--between">
           <a
             href={link}
             className="project-card__link"

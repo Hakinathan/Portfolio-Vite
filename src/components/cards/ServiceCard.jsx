@@ -19,7 +19,6 @@ function ServiceCard({ features }) {
 }
 
 ServiceCard.propTypes = {
-  title: PropTypes.string.isRequired,
   features: PropTypes.array.isRequired,
 };
 
