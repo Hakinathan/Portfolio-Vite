@@ -1,7 +1,5 @@
 import { useState } from "react";
-import { BiMenuAltRight } from "react-icons/bi";
-import { RxCross2 } from "react-icons/rx";
-import { IconContext } from "react-icons";
+import Hamburger from "hamburger-react";
 
 const links = [
   {
@@ -17,10 +15,6 @@ const links = [
     url: "#services",
   },
   {
-    label: "Parlons-en 📞",
-    url: "#cta",
-  },
-  {
     label: "CV 📝",
     url: "https://flowcv.com/resume/o7asiufarb",
     target: true,
@@ -31,7 +25,7 @@ function Menu() {
   const [show, setShow] = useState(false);
   return (
     <>
-      <button
+      {/* <button
         className="header__icon"
         onClick={() => setShow(!show)}
         aria-label="Icône du menu"
@@ -39,7 +33,17 @@ function Menu() {
         <IconContext.Provider value={{ className: "header__icon--svg" }}>
           {show ? <RxCross2 /> : <BiMenuAltRight />}
         </IconContext.Provider>
-      </button>
+      </button> */}
+      <div className="header__icon">
+        <Hamburger
+          toggled={show}
+          toggle={setShow}
+          rounded
+          label="Icône du menu"
+          color="#fff"
+          size={24}
+        />
+      </div>
       {show && (
         <nav className="header__nav">
           <ul className="header__list flex flex--column">

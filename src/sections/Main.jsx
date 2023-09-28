@@ -2,7 +2,6 @@ import SectionTitle from "../components/SectionTitle";
 import Projects from "./Projects";
 import Testimonials from "./Testimonials";
 import Services from "./Services";
-import Planning from "./Planning";
 
 function Main() {
   return (
@@ -13,8 +12,6 @@ function Main() {
       <Testimonials />
       <SectionTitle title="Mon service de site web 🤝🏻" />
       <Services />
-      <SectionTitle title="Parlons-en 📞" />
-      <Planning />
     </main>
   );
 }

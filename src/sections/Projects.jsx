@@ -16,6 +16,12 @@ const projects = [
 function Projects() {
   return (
     <section className="projects-section" id="creations">
+      <link
+        rel="preload"
+        as="image"
+        imageSrcSet={projects.map((project) => project.image).join(",")}
+        type="image/webp"
+      />
       <div className="projects-section__content grid grid--col-3">
         {projects.map((project) => (
           <ProjectCard
