@@ -22,11 +22,13 @@ function Home() {
             <h1 className="title">Bienvenue sur mon site ! 😎</h1>
           </Animator>
         </ScrollPage>
-        <Menu />
-        <CalButton />
-        <Header />
-        <Main />
-        <Footer />
+        <ScrollPage>
+          <Menu />
+          <CalButton />
+          <Header />
+          <Main />
+          <Footer />
+        </ScrollPage>
       </ScrollContainer>
     </>
   );
