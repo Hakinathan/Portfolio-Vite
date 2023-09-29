@@ -55,7 +55,8 @@
 
 /* 544px (Phones) */
 @media (max-width: 34em) {
-  .header__rocket {
+  .header__rocket,
+  .header__astronaut {
     display: none;
   }
 
