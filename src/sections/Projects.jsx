@@ -9,7 +9,7 @@ const projects = [
     image: Codamate,
     link: "https://codamate.nathan-lemoine.be",
     github: "https://github.com/Hakinathan/CodaMate",
-    tags: ["HTML", "CSS", "Vite JS", "React"],
+    tags: ["HTML", "CSS", "Vite", "React"],
   },
 ];
 

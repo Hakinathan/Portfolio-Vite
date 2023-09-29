@@ -1,10 +1,3 @@
-/* Title */
-
-.title {
-  font-size: 3.2rem;
-  font-weight: 700;
-}
-
 /* Menu */
 
 .header__icon {
@@ -101,11 +94,12 @@
 /* Header */
 
 .header {
-  margin: 9.6rem auto;
+  margin: 0 auto 2.4rem auto;
   padding: 0 2.4rem;
   text-align: center;
   gap: 1.6rem;
   max-width: 100rem;
+  height: 100vh;
   position: relative;
 }
 
@@ -127,14 +121,15 @@
   opacity: 0.5;
 }
 
-.header__rocket {
+.header__astronaut {
   position: absolute;
-  bottom: -15rem;
-  right: -5rem;
   z-index: -1;
+  top: 20rem;
+  right: 5rem;
   height: 15rem;
   width: 15rem;
   opacity: 0.5;
+  animation: floatInSpace 4s infinite;
 }
 
 .header__description {
@@ -179,8 +174,7 @@
 }
 
 .header__button:hover,
-.header__button:active,
-.header__button--cta:hover {
+.header__button:active {
   transform: translateY(-0.3rem);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
@@ -203,7 +197,7 @@
 /* Projects */
 .projects-section__content {
   max-width: 100rem;
-  margin: 9.6rem auto;
+  margin: 0 auto;
   column-gap: 2.4rem;
   row-gap: 4.8rem;
 }
@@ -274,7 +268,7 @@
 
 .testimonials__container {
   max-width: 100rem;
-  margin: 9.6rem auto;
+  margin: 0 auto;
   padding: 0 2.4rem;
 }
 
@@ -348,16 +342,9 @@
 
 .services-section__content {
   max-width: 120rem;
-  margin: 9.6rem auto;
+  margin: 0 auto;
   column-gap: 2.4rem;
   row-gap: 4.8rem;
-}
-
-.service-card__title {
-  font-size: 2.4rem;
-  font-weight: 700;
-  color: var(--color-text-middle);
-  margin-bottom: 1.6rem;
 }
 
 .service-card {
@@ -392,23 +379,6 @@
   padding: 0.8rem;
   border-radius: 50%;
   display: block;
-}
-
-/* Github */
-
-.github-section {
-  max-width: 100rem;
-  margin: 9.6rem auto;
-}
-
-.github-section__content {
-  padding: 0 2.4rem;
-  row-gap: 2.4rem;
-  column-gap: 4.8rem;
-}
-
-.github-section__content img {
-  margin: auto;
 }
 
 /* Footer */
@@ -504,5 +474,17 @@
   20%,
   80% {
     transform: translateY(0.4rem);
+  }
+}
+
+@keyframes floatInSpace {
+  0% {
+    transform: translateY(0) translateX(0) rotate(45deg);
+  }
+  50% {
+    transform: translateY(-0.8rem) translateX(-1rem) rotate(45deg);
+  }
+  100% {
+    transform: translateY(0) translateX(0) rotate(45deg);
   }
 }
