@@ -112,6 +112,10 @@
   .title {
     font-size: 3.2rem;
   }
+
+  .certifications-section__card {
+    width: 100%;
+  }
 }
 
 /* 360px (Phones) */
