@@ -10,8 +10,8 @@ function ProjectCard({ title, description, image, link, tags, github }) {
         alt={`Project ${title} image`}
         className="project-card__image"
         type="image/webp"
-        width={300}
-        height={225}
+        width={960}
+        height={720}
       />
       <div className="project-card__content flex flex--column">
         <h3 className="project-card__title">{title}</h3>

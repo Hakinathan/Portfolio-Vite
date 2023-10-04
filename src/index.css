@@ -204,6 +204,7 @@
 
 .project-card__image {
   width: 100%;
+  height: auto;
   transition: all 0.4s;
   border-radius: 1.2rem;
   filter: brightness(80%);
@@ -379,6 +380,51 @@
   padding: 0.8rem;
   border-radius: 50%;
   display: block;
+}
+
+/* Certifications */
+
+.certifications-section__content {
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 0 2.4rem;
+}
+
+.certifications-section__card {
+  width: 50rem;
+  align-items: center;
+  margin: 0 auto;
+  text-align: left;
+  gap: 3.2rem;
+}
+
+.certifications-section__card--icon {
+  height: 6rem;
+  width: 6rem;
+  background-color: var(--color-text-light);
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.certifications-section__card--text {
+  gap: 1rem;
+}
+
+.certifications-section__card--title {
+  font-size: 1.4rem;
+}
+
+.certifications-section__card--platform {
+  font-size: 1.2rem;
+  color: var(--color-text-title);
+}
+
+.certifications-section__card--link:link,
+.certifications-section__card--link:visited {
+  font-size: 1.2rem;
+  margin-top: 1.2rem;
+  gap: 0.8rem;
+  color: var(--color-text-middle);
 }
 
 /* Footer */
