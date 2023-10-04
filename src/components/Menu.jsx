@@ -21,6 +21,10 @@ const links = [
     url: "https://flowcv.com/resume/o7asiufarb",
     target: true,
   },
+  {
+    label: "Certifications 📜",
+    url: "#certifications",
+  },
 ];
 
 const variants = {
@@ -47,6 +51,7 @@ function Menu() {
     <>
       <Toggle bool={show} setFunction={() => setShow((show) => !show)} />
       <m.nav
+        initial="closed"
         className="header__nav"
         animate={show ? "open" : "closed"}
         variants={variants}
