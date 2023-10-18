@@ -1,6 +1,8 @@
 import { getCalApi } from "@calcom/embed-react";
 import { useEffect, useState } from "react";
 
+import styles from "./CalButton.module.css";
+
 function CalButton() {
   const [isLoading, setIsLoading] = useState(false);
 
@@ -22,7 +24,7 @@ function CalButton() {
     <button
       data-cal-link="lusty9149/session-decouverte-🔭"
       data-cal-config='{"layout":"month_view"}'
-      className={`cal-button ${isLoading ? "cal-button--loading" : ""}`}
+      className={`${styles.button} ${isLoading ? styles.loading : ""}`}
     >
       Prendre un rendez-vous 📅
     </button>

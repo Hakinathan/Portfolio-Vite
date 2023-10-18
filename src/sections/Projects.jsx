@@ -1,6 +1,8 @@
 import ProjectCard from "../components/cards/ProjectCard";
 import Codamate from "../assets/img/codamate.webp";
 
+import styles from "./Projects.module.css";
+
 const projects = [
   {
     title: "CodaMate",
@@ -22,7 +24,7 @@ function Projects() {
         imageSrcSet={projects.map((project) => project.image).join(",")}
         type="image/webp"
       />
-      <div className="projects-section__content grid grid--col-3">
+      <div className={styles.content}>
         {projects.map((project) => (
           <ProjectCard
             key={project.title}

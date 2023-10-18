@@ -2,39 +2,41 @@ import PropTypes from "prop-types";
 import { PiShareFill } from "react-icons/pi";
 import { FiGithub } from "react-icons/fi";
 
+import styles from "./ProjectCard.module.css";
+
 function ProjectCard({ title, description, image, link, tags, github }) {
   return (
-    <div className="project-card">
+    <div>
       <img
         src={image}
         alt={`Project ${title} image`}
-        className="project-card__image"
+        className={styles.image}
         type="image/webp"
         width={960}
         height={720}
       />
-      <div className="project-card__content flex flex--column">
-        <h3 className="project-card__title">{title}</h3>
-        <p className="project-card__description">{description}</p>
-        <div className="flex flex--between">
+      <div className={styles.content}>
+        <h3 className={styles.title}>{title}</h3>
+        <p className={styles.description}>{description}</p>
+        <div className={styles.links}>
           <a
             href={link}
-            className="project-card__link"
+            className={styles.link}
             aria-label="Voir le projet dans un nouvel onglet"
           >
             <PiShareFill />
           </a>
           <a
             href={github}
-            className="project-card__link"
+            className={styles.link}
             aria-label="Voir le code source sur Github"
           >
             <FiGithub />
           </a>
         </div>
-        <div className="project-card__tags flex">
+        <div className={styles.tags}>
           {tags.map((tag) => (
-            <span key={tag} className="project-card__tag">
+            <span key={tag} className={styles.tag}>
               {tag}
             </span>
           ))}
