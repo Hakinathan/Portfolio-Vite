@@ -2,6 +2,8 @@ import { m, useAnimation, useInView } from "framer-motion";
 import PropTypes from "prop-types";
 import { useEffect, useRef } from "react";
 
+import styles from "./Reveal.module.css";
+
 function Reveal({ children }) {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true });
@@ -14,7 +16,7 @@ function Reveal({ children }) {
   }, [inView, mainControls]);
 
   return (
-    <div className="margin-bottom-lg" ref={ref}>
+    <div className={styles.lg} ref={ref}>
       <m.div
         variants={{
           hidden: { opacity: 0, y: 75 },

@@ -1,9 +1,11 @@
 import Hamburger from "hamburger-react";
 import PropTypes from "prop-types";
 
+import styles from "./Toggle.module.css";
+
 function Toggle({ bool, setFunction }) {
   return (
-    <div className="header__icon">
+    <div className={styles.toggle}>
       <Hamburger
         toggled={bool}
         toggle={setFunction}

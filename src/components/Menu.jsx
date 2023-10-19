@@ -3,6 +3,8 @@ import { m } from "framer-motion";
 import Toggle from "./Menu/Toggle";
 import Items from "./Menu/Items";
 
+import styles from "./Menu.module.css";
+
 const links = [
   {
     label: "Mes créations 🚀",
@@ -32,14 +34,15 @@ const variants = {
     opacity: 1,
     y: 0,
     transition: {
-      y: { stiffness: 1000, velocity: -100 },
+      duration: 0.3,
     },
   },
   closed: {
     opacity: 0,
-    y: 50,
+    delay: 0.3,
+    y: 75,
     transition: {
-      y: { stiffness: 1000 },
+      duration: 0.3,
     },
   },
 };
@@ -52,7 +55,7 @@ function Menu() {
       <Toggle bool={show} setFunction={() => setShow((show) => !show)} />
       <m.nav
         initial="closed"
-        className="header__nav"
+        className={styles.menu}
         animate={show ? "open" : "closed"}
         variants={variants}
       >

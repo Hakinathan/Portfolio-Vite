@@ -17,7 +17,7 @@ const projects = [
 
 function Projects() {
   return (
-    <section className="projects-section" id="creations">
+    <section id="creations">
       <link
         rel="preload"
         as="image"

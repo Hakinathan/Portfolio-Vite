@@ -1,7 +1,9 @@
 import PropTypes from "prop-types";
 
+import styles from "./SectionTitle.module.css";
+
 function SectionTitle({ title }) {
-  return <h2 className="section__title">{title}</h2>;
+  return <h2 className={styles.title}>{title}</h2>;
 }
 
 SectionTitle.propTypes = {

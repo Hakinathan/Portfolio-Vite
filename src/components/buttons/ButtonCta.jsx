@@ -1,8 +1,10 @@
 import PropTypes from "prop-types";
 
-function ButtonCta({ text, link, className }) {
+import styles from "./ButtonCta.module.css";
+
+function ButtonCta({ text, link }) {
   return (
-    <a href={link} className={className}>
+    <a href={link} className={styles.cta}>
       {text}
     </a>
   );
@@ -11,7 +13,6 @@ function ButtonCta({ text, link, className }) {
 ButtonCta.propTypes = {
   text: PropTypes.string.isRequired,
   link: PropTypes.string.isRequired,
-  className: PropTypes.string.isRequired,
 };
 
 export default ButtonCta;

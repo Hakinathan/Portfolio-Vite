@@ -1,4 +1,4 @@
-.button {
+.btn {
   font-size: 1.6rem;
   font-weight: 700;
   color: var(--color-text-white);
@@ -18,4 +18,11 @@
 
 .loading {
   display: none;
+}
+
+@keyframes buttonUpAndDown {
+  20%,
+  80% {
+    transform: translateY(0.4rem);
+  }
 }

@@ -1,11 +1,13 @@
 import { PropTypes } from "prop-types";
 
+import styles from "./Item.module.css";
+
 function Item({ link, index }) {
   return (
-    <li key={index} className="header__item">
+    <li key={index}>
       <a
         href={link.url}
-        className={`header__link`}
+        className={styles.link}
         {...(link.target && {
           target: "_blank",
           rel: "noopener noreferrer",

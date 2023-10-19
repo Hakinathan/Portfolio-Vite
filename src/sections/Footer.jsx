@@ -1,6 +1,8 @@
 import { BiLogoLinkedin } from "react-icons/bi";
 import { FiTwitter, FiMail, FiGithub } from "react-icons/fi";
 
+import styles from "./Footer.module.css";
+
 const socialLogos = [
   {
     name: "LinkedIn",
@@ -26,31 +28,31 @@ const socialLogos = [
 
 function Footer() {
   return (
-    <footer className="footer text-center flex flex--column">
-      <div className="footer__copy flex flex--column">
-        <p className="footer__text">
+    <footer className={styles.footer}>
+      <div className={styles.copy}>
+        <p className={styles.text}>
           Nathan Lemoine - Tous droits réservés - &copy;
           {new Date().getFullYear()}
         </p>
-        <p className="footer__text">
+        <p className={styles.text}>
           Numéro BCE : <strong>0804.552.840</strong>
         </p>
       </div>
-      <div className="footer__links flex">
+      <div className={styles.links}>
         {socialLogos.map((logo, index) => (
           <a
             href={logo.link}
             target="_blank"
             rel="noopener noreferrer"
             key={index}
-            className="footer__link"
+            className={styles.link}
             aria-label={`Voir le profil sur ${logo.name} dans un nouvel onglet`}
           >
             {logo.logo}
           </a>
         ))}
       </div>
-      <p className="footer__text-end"> Made with ♥ by me with React & Vite</p>
+      <p className={styles.end}> Made with ♥ by me with React & Vite</p>
     </footer>
   );
 }

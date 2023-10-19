@@ -1,16 +1,16 @@
 import PropTypes from "prop-types";
 
+import styles from "./ServiceCard.module.css";
+
 function ServiceCard({ features }) {
   return (
-    <div className="service-card flex flex--column">
-      <div className="service-card__features grid grid--col-4">
+    <div className={styles.card}>
+      <div className={styles.features}>
         {features.map((feature, index) => (
-          <div className="service-card__feature flex flex--column" key={index}>
+          <div className={styles.feature} key={index}>
             {feature.icon}
-            <p className="service-card__feature--title">{feature.name}</p>
-            <p className="service-card__feature--description">
-              {feature.description}
-            </p>
+            <p className={styles.title}>{feature.name}</p>
+            <p className={styles.description}>{feature.description}</p>
           </div>
         ))}
       </div>

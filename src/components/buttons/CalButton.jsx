@@ -24,7 +24,7 @@ function CalButton() {
     <button
       data-cal-link="lusty9149/session-decouverte-🔭"
       data-cal-config='{"layout":"month_view"}'
-      className={`${styles.button} ${isLoading ? styles.loading : ""}`}
+      className={`${styles.btn} ${isLoading ? styles.loading : ""}`}
     >
       Prendre un rendez-vous 📅
     </button>

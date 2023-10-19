@@ -1,6 +1,8 @@
 import certification from "../assets/svg/certification.svg";
 import { PiShareFill } from "react-icons/pi";
 
+import styles from "./Certifications.module.css";
+
 const certifications = [
   {
     name: "Site web responsive HTML et CSS",
@@ -24,24 +26,22 @@ const certifications = [
 
 function Certifications() {
   return (
-    <section className="certifications-section" id="certifications">
-      <div className="certifications-section__content flex flex--column gap-lg">
+    <section id="certifications">
+      <div className={styles.content}>
         {certifications.map((degree) => (
-          <div className="certifications-section__card flex" key={degree.name}>
+          <div className={styles.card} key={degree.name}>
             <img
               src={certification}
               alt="Icône d'une certification"
-              className="certifications-section__card--icon"
+              className={styles.icon}
             />
-            <div className="certifications-section__card--text flex flex--column">
-              <h3 className="certifications-section__card--title">
-                {degree.name}
-              </h3>
-              <p className="certifications-section__card--platform">
+            <div className={styles.text}>
+              <h3 className={styles.title}>{degree.name}</h3>
+              <p className={styles.platform}>
                 {degree.platform} - {degree.year}
               </p>
               <a
-                className="certifications-section__card--link flex"
+                className={styles.link}
                 href={degree.link}
                 target="_blank"
                 rel="noreferrer"

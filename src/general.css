@@ -45,6 +45,11 @@
   --color-text-light: #f1f4ff;
   --color-text-white: #ffffff;
   --color-text-gray-dark: #333;
+  /* --small-desktop: 75em;
+  --tablets: 59em;
+  --small-tablets: 44em;
+  --phones: 34em;
+  --small-phones: 22.5em; */
 }
 
 html {
@@ -67,72 +72,16 @@ ul {
   list-style: none;
 }
 
-.flex {
-  display: flex;
+@media (max-width: 75em) {
+  html {
+    /* 8px : 16px = 0.5 */
+    font-size: 56.25%;
+  }
 }
 
-.flex--column {
-  flex-direction: column;
+@media (max-width: 59em) {
+  html {
+    /* 8px : 16px = 0.5 */
+    font-size: 50%;
+  }
 }
-
-.flex--center {
-  justify-content: center;
-  align-items: center;
-}
-
-.flex--between {
-  justify-content: space-between;
-}
-
-.grid {
-  display: grid;
-}
-
-.grid--col-1 {
-  grid-template-columns: repeat(1, 1fr);
-}
-
-.grid--col-2 {
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.grid--col-3 {
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.grid--col-4 {
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.section__title {
-  font-size: 3.2rem;
-  font-weight: 700;
-  margin-bottom: 9.6rem;
-  color: var(--color-text-title);
-  text-align: center;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.margin-top-2 {
-  margin-top: 2.4rem;
-}
-
-.margin-bottom-lg {
-  margin-bottom: 12.8rem;
-}
-
-.gap-lg {
-  gap: 4.8rem;
-}
-
-/*
-
-- Font sizes (px)
-10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
-
-  - Spacing system (px)
-2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
- */
