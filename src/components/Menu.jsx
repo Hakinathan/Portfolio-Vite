@@ -32,15 +32,14 @@ const links = [
 const variants = {
   open: {
     opacity: 1,
-    y: 0,
+    x: 0,
     transition: {
       duration: 0.3,
     },
   },
   closed: {
     opacity: 0,
-    delay: 0.3,
-    y: 75,
+    x: 300,
     transition: {
       duration: 0.3,
     },

@@ -15,7 +15,7 @@
   }
 }
 
-@media (max-width: 56.25em) {
+@media (max-width: 59em) {
   .content {
     grid-template-columns: repeat(1, 1fr);
     row-gap: 2.4rem;

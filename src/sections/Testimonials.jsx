@@ -5,6 +5,7 @@ import { useState } from "react";
 import { ImQuotesLeft } from "react-icons/im";
 
 import styles from "./Testimonials.module.css";
+import Testimonial from "../components/Testimonial";
 
 const feedbacks = [
   {
@@ -48,24 +49,13 @@ function Testimonials() {
         </div>
         <div className={styles.authors}>
           {feedbacks.map((feedback, index) => (
-            <div
-              className={`${styles.author} ${
-                currentFeedback === index ? styles.active : ""
-              }`}
+            <Testimonial
+              onClick={handleFeedbackChange}
+              current={currentFeedback}
+              index={index}
+              feedback={feedback}
               key={index}
-              onClick={() => handleFeedbackChange(index)}
-            >
-              <img
-                className={styles.image}
-                src={feedback.image}
-                alt={feedback.name}
-                width={100}
-                height={100}
-                loading="lazy"
-              />
-              <h3 className={styles.name}>{feedback.name}</h3>
-              <p className={styles.title}>{feedback.title}</p>
-            </div>
+            />
           ))}
         </div>
       </div>

@@ -45,11 +45,11 @@
   --color-text-light: #f1f4ff;
   --color-text-white: #ffffff;
   --color-text-gray-dark: #333;
-  /* --small-desktop: 75em;
-  --tablets: 59em;
-  --small-tablets: 44em;
-  --phones: 34em;
-  --small-phones: 22.5em; */
+  /* --small-desktop: 75em; 1200px
+  --tablets: 59em; 944px
+  --small-tablets: 44em; 704px
+  --phones: 34em; 544px
+  --small-phones: 22.5em;  360px */
 }
 
 html {
